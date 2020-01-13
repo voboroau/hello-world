@@ -1,9 +1,11 @@
+
 <div id="app">
 	<h2> {{products}} are in stock </h2> 
     <h2> {{electronics}} are in stock </h2> 
     <ul> <li v-for= "book in Books">{{Books}}<li></ul>
     <h2> {{agesqr}} are in stock </h2> 
     <h2> {{age}} are in stock </h2> 
+    <input/ v-model.number="age">
     <button @click="age+=1">Add to age</button>
 </div>
 
@@ -15,8 +17,9 @@
         	products: 'telebvision',
             electronics: ['TV', 'Desktop computers', 'phones'],
             Books: ['Science', 'Arts', 'others'],
-            age: 20
+            age: null
         	},
   //    computed: {agesqr(){return age * age}}
     })
 </script>
+
